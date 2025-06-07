@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbionika - Innowacyjne preparaty dla rolnictwa</title>
+    <style>
+        /* --- Główne style strony --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Kontener --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Baner --- */
+        .banner {
+            width: 100%;
+            height: 400px; 
+            overflow: hidden; 
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center; 
+        }
+
+        /* --- Sekcja produktu --- */
+        .product-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 50px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .product-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .product-image {
+            flex: 1;
+            max-width: 450px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-description {
+            flex: 1.5;
+        }
+
+        .product-description h2 {
+            font-size: 2.5em;
+            color: #2c5c3d; /* Ciemny zielony */
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .product-description h3 {
+            font-size: 1.4em;
+            color: #3e8257; /* Jaśniejszy zielony */
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-left: 4px solid #7ca982;
+            padding-left: 10px;
+        }
+
+        .product-description p {
+            font-size: 1em;
+            text-align: justify;
+        }
+        
+        /* --- Stopka --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        /* --- Responsywność (dla urządzeń mobilnych) --- */
+        @media (max-width: 800px) {
+            .banner {
+                height: 250px; /* Mniejszy baner na telefonach */
+            }
+            .product-section,
+            .product-section:nth-child(odd) {
+                flex-direction: column;
+                text-align: center;
+            }
+            .product-description h2,
+            .product-description h3 {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="banner">
+        <img src="baner_new.png" alt="Baner firmy Symbionika z zielonymi roślinami">
+    </header>
+
+    <main class="container">
+
+        <section id="ploner" class="product-section">
+            <div class="product-image">
+                <img src="ploner.png" alt="Grafika produktu Ploner">
+            </div>
+            <div class="product-description">
+                <h2>Ploner</h2>
+                
+                <h3>Ogólny opis</h3>
+                <p>
+                    Ploner to innowacyjny nawóz organiczny oparty na organicznej melasie jako nośniku informacji. Zawiera ekstrakt z materii roślinnej (pochodzącej z produkcji żywności) wzbogacony specjalnie dobranymi „informacjami” mineralnych soli funkcjonalnych. Dzięki unikalnej technologii zapisu informacji preparat zwiększa aktywność mikro- i makroorganizmów glebowych w warstwie uprawnej, co przekłada się na lepsze użyźnienie i napowietrzenie gleby. W efekcie regularne stosowanie Plonera przyczynia się do żyzności podłoża, poprawy struktury gleby oraz zwiększenia urodzajności upraw.
+                </p>
+
+                <h3>Przeznaczenie i zastosowanie</h3>
+                <p>
+                    Preparat Ploner jest przeznaczony do regeneracji i poprawy jakości różnych typów gleb uprawnych. Rekomendowany jest szczególnie po zbiorach oraz wiosną przed siewem, aby uzupełnić glebę w materię organiczną i pobudzić życie biologiczne. Można go stosować na polach uprawnych, łąkach i pastwiskach – wszędzie tam, gdzie gleba wymaga zwiększenia żyzności i aktywności mikrobiologicznej. Ploner sprawdzi się zarówno w gospodarstwach tradycyjnych, jak i ekologicznych (jest bezpieczny i nie zawiera syntetycznych chemikaliów). Jego zastosowanie pozwala ograniczyć ilość sztucznych nawozów, poprawiając strukturę gleby i przygotowując grunt pod wyższe plony w kolejnym sezonie.
+                </p>
+            </div>
+        </section>
+
+        <section id="viveko" class="product-section">
+            <div class="product-image">
+                <img src="viveko.png" alt="Grafika produktu Viveko">
+            </div>
+            <div class="product-description">
+                <h2>Viveko</h2>
+
+                <h3>Ogólny opis</h3>
+                <p>
+                    Viveko to biostymulator wzrostu roślin wykorzystujący organiczną melasę jako nośnik cennych informacji biologicznych. Podobnie jak Ploner, jest to preparat oparty na składnikach roślinnych i „zapisie informacyjnym” minerałów, jednak jego formuła została ukierunkowana na stymulację rozwoju roślin. Dzięki unikalnej technologii kwantowego zapisu informacji (pola torsyjne) Viveko pobudza procesy życiowe roślin na poziomie komórkowym, nie zmieniając przy tym chemicznej struktury preparatu. Preparat wpływa korzystnie na każdy etap rozwoju – od kiełkowania, przez wzrost wegetatywny, po kwitnienie i plonowanie. Regularne stosowanie Viveko przekłada się na intensywniejszy wzrost, obfitsze kwitnienie oraz wyższą zdrowotność upraw.
+                </p>
+
+                <h3>Przeznaczenie i zastosowanie</h3>
+                <p>
+                    Viveko jest przeznaczone do wszystkich gatunków uprawnych (rolniczych i ogrodniczych), w których chcemy przyspieszyć i wzmocnić wzrost oraz zwiększyć plony. Szczególnie polecany jest w uprawach warzyw, sadowniczych i polowych, gdzie obserwuje się słabe wschody, drobne kwiaty lub niskie zawiązywanie owoców. Dzięki swoim właściwościom biostymulującym preparat poprawia kiełkowanie nasion, stymuluje bujny wzrost systemu korzeniowego i części nadziemnych oraz wydłuża okres kwitnienia i owocowania. Dodatkowo zwiększa odporność roślin na stresy biotyczne (choroby, szkodniki) i abiotyczne (niedobór wody), wspomagając utrzymanie równowagi wodnej w tkankach roślinnych. Viveko znajdzie zastosowanie m.in. w uprawie zbóż, rzepaku, kukurydzy, warzyw gruntowych, drzew i krzewów owocowych oraz roślin ozdobnych. Można go stosować zarówno w gruncie, jak i pod osłonami. Preparat jest bezpieczny dla roślin – nie powoduje uszkodzeń ani fitotoksyczności, a jednocześnie pozwala ograniczyć chemiczne nawozy i pestycydy poprzez wzmocnienie naturalnej witalności roślin.
+                </p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Symbionika. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
