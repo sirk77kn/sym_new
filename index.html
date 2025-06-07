@@ -37,6 +37,14 @@
             object-position: center; 
         }
 
+        /* --- Style nagłówków sekcji --- */
+        .section-title {
+            font-size: 2.5em;
+            color: #2c5c3d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         /* --- Sekcja produktu --- */
         .product-section {
             display: flex;
@@ -68,14 +76,14 @@
 
         .product-description h2 {
             font-size: 2.5em;
-            color: #2c5c3d; /* Ciemny zielony */
+            color: #2c5c3d;
             margin-top: 0;
             margin-bottom: 20px;
         }
 
         .product-description h3 {
             font-size: 1.4em;
-            color: #3e8257; /* Jaśniejszy zielony */
+            color: #3e8257;
             margin-top: 25px;
             margin-bottom: 10px;
             border-left: 4px solid #7ca982;
@@ -86,6 +94,21 @@
             font-size: 1em;
             text-align: justify;
         }
+
+        /* --- Sekcja Dawkowanie (NOWA) --- */
+        .dosage-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .dosage-section img {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
         
         /* --- Stopka --- */
         footer {
@@ -93,12 +116,13 @@
             padding: 20px;
             margin-top: 30px;
             color: #777;
+            background-color: #e9e9e9;
         }
 
         /* --- Responsywność (dla urządzeń mobilnych) --- */
         @media (max-width: 800px) {
             .banner {
-                height: 250px; /* Mniejszy baner na telefonach */
+                height: 250px;
             }
             .product-section,
             .product-section:nth-child(odd) {
@@ -156,6 +180,11 @@
                     Viveko jest przeznaczone do wszystkich gatunków uprawnych (rolniczych i ogrodniczych), w których chcemy przyspieszyć i wzmocnić wzrost oraz zwiększyć plony. Szczególnie polecany jest w uprawach warzyw, sadowniczych i polowych, gdzie obserwuje się słabe wschody, drobne kwiaty lub niskie zawiązywanie owoców. Dzięki swoim właściwościom biostymulującym preparat poprawia kiełkowanie nasion, stymuluje bujny wzrost systemu korzeniowego i części nadziemnych oraz wydłuża okres kwitnienia i owocowania. Dodatkowo zwiększa odporność roślin na stresy biotyczne (choroby, szkodniki) i abiotyczne (niedobór wody), wspomagając utrzymanie równowagi wodnej w tkankach roślinnych. Viveko znajdzie zastosowanie m.in. w uprawie zbóż, rzepaku, kukurydzy, warzyw gruntowych, drzew i krzewów owocowych oraz roślin ozdobnych. Można go stosować zarówno w gruncie, jak i pod osłonami. Preparat jest bezpieczny dla roślin – nie powoduje uszkodzeń ani fitotoksyczności, a jednocześnie pozwala ograniczyć chemiczne nawozy i pestycydy poprzez wzmocnienie naturalnej witalności roślin.
                 </p>
             </div>
+        </section>
+        
+        <section id="dawkowanie" class="dosage-section">
+            <h2 class="section-title">Dawkowanie</h2>
+            <img src="dawkowanie.png" alt="Instrukcja dawkowania preparatów">
         </section>
 
     </main>
